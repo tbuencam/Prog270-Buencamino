@@ -1,0 +1,82 @@
+/* p  and .position dimensions and font weight are the same for all versions so I moved them to the top. */
+p {
+    font-size:large;    
+}
+.position01, .position02, .position03 {
+    width: 50px;
+    height: 50px;
+	font-weight:bold;
+}
+
+/* Large (Default, Blue) */
+body {
+     background-color: #000077;
+    color: #000044;
+}
+header {
+    background-color: #0000AA;
+    color: #BBBBFF; 
+}
+article {
+    background-color: #0000FF;
+    color: #000088;     
+}
+.position01 {
+	background-color: #BBBBFF; 
+}
+.position02 { 
+    background-color: #8888FF;    
+}
+.position03 {  
+    background-color: #5555FF;   
+}
+
+/* Medium (Green) */
+@media screen and (max-width: 1024px) {
+    body {
+    background-color: #007700;
+    color: #004400;
+    }
+	header {
+    background-color: #00AA00;
+    color: #BBFFBB; 
+    }
+	article {
+    background-color: #00FF00;
+    color: #008800;     
+	}	
+	.position01 {
+	background-color: #BBFFBB;
+	}
+	.position02 { 
+    background-color: #88FF88;    
+	}
+	.position03 {  
+    background-color: #55FF55;   
+	}
+}
+
+/* Small (Red) */
+@media screen and (max-width: 520px) {
+    body {
+        background-color: #770000;
+        color: #440000;
+    }
+	header {
+    background-color: #AA0000;
+    color: #FFBBBB; 
+	}
+	article {
+    background-color: #FF0000;
+    color: #880000;     
+	}	
+	.position01 {
+	background-color: #FFBBBB;
+	}
+	.position02 { 
+    background-color: #FF8888;    
+	}
+	.position03 {  
+    background-color: #FF5555;   
+	}
+}

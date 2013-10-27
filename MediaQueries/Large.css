@@ -1,0 +1,39 @@
+body {
+    background-color: #000077;
+    color: #000044;
+}
+
+p {
+    font-size:large;    
+}
+
+header {
+    background-color: #0000AA;
+    color: #BBBBFF; 
+}
+
+article {
+    background-color: #0000FF;
+    color: #000088;     
+}
+
+.position01 {
+    width: 50px;
+    height: 50px;
+    background-color: #BBBBFF;
+    font-weight:bold;
+}
+
+.position02 {
+    width: 50px;
+    height: 50px;
+    background-color: #8888FF;
+    font-weight:bold;
+}
+
+.position03 {
+    width: 50px;
+    height: 50px;
+    background-color: #5555FF;
+    font-weight:bold;
+}
