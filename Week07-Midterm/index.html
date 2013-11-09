@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="index.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand" href="index.html">Midterm</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="Answers.html">Answers</a></li>
+						<li><a href="Score.html">Score</a></li>
+						<li><a href="Contacts.html">Contact Me</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="starter-template">
+			
+				<h1>Trivial Midterm</h1>
+				<div id='drawHere01' class='draw-target'></div>
+			    <!-- <div id='drawHere02' class='draw-target'></div> -->
+				<p>Welcome to your midterm exam, Charlie! Answer the questions in the various subject areas. Then, check your answers and score.
+                </p>
+                <p>Good luck!!</p>
+				<br />
+				
+			<br />
+			<p><img alt="Scholar Droid" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/scholar-droid.png" title="Scholar Droid" /></p>
+
+			<!--</div> -->
+			
+			<br />
+			<br />
+
+			<div class="row">
+			<div class="col-lg-4">
+			    <img src = "history.png" class="question"/><!--<h2>History</h2>-->
+                <p><img alt="The Bayeux Tapestry" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/BayeuxTapestry.jpg" title="The Bayeux Tapestry" /></p>
+                <!--<p><img src = "history.png"/>  What <strong>language</strong> is used to narrate the events of the Norman Conquest on the Bayeux Tapestry?</p> -->
+                <p><strong>Q:</strong>  What <strong>language</strong> appears on the <i>Bayeux Tapestry</i>?</p>
+			</div>
+			<div class="col-lg-4">
+			    <img src = "geography.png" class="question"/><!--<h2>Geography</h2>-->
+                <p><img alt="Africa" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/Africa.png" title="Africa" /></p>
+                <p><strong>Q:</strong>  What is the <strong>capital</strong> of Burkina Faso?</p>
+			</div>
+			<div class="col-lg-4">
+				<img src = "artlit.png" class="question"/><!--<h2>Art</h2>-->
+                <p><img alt="Gustave Caillebotte" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/GustaveCaillebotte.jpg" title="Gustave Caillebotte" /></p>
+                <p><strong>Q:</strong> In what <strong>two professions</strong> was the artist who painted this iconic masterpiece engaged?</p>
+			</div>
+				<br />
+				<br />
+			<div class="col-lg-4">
+			    <img src = "reversehist.png" class="question"/><!--<h2>Jeopardy</h2>-->
+                <p><img alt="Africa" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/Jeopardy.png" title="Africa" /></p>
+                <p><strong>A:</strong>The following answers a question:</p>
+                <!-- Answers -->
+				<div id="monogoData" ng-controller="MyController">
+					<ul>
+						<li ng-repeat="president in presidents">
+							<p>{{president.getPresidentName()}}, {{president.getTermStart()}}-{{president.getTermEnd()}}<br/>
+						</li>
+					</ul>
+					<!-- <div ng-bind-html-unsafe="hint"></div> -->
+				</div>  <!-- mongoData -->
+				
+			<!--</div> -->
+
+			</div> <!-- starter-template ?? -->
+
+		</div><!-- /.container -->
+
+	</body>
+</html>
