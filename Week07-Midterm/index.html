@@ -42,61 +42,51 @@
 
 		<div class="container">
 			<div class="starter-template">
-			
 				<h1>Trivial Midterm</h1>
 				<div id='drawHere01' class='draw-target'></div>
-			    <!-- <div id='drawHere02' class='draw-target'></div> -->
 				<p>Welcome to your midterm exam, Charlie! Answer the questions in the various subject areas. Then, check your answers and score.
                 </p>
                 <p>Good luck!!</p>
 				<br />
-				
-			<br />
-			<p><img alt="Scholar Droid" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/scholar-droid.png" title="Scholar Droid" /></p>
-
-			<!--</div> -->
-			
-			<br />
-			<br />
-
-			<div class="row">
-			<div class="col-lg-4">
-			    <img src = "history.png" class="question"/><!--<h2>History</h2>-->
-                <p><img alt="The Bayeux Tapestry" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/BayeuxTapestry.jpg" title="The Bayeux Tapestry" /></p>
-                <!--<p><img src = "history.png"/>  What <strong>language</strong> is used to narrate the events of the Norman Conquest on the Bayeux Tapestry?</p> -->
-                <p><strong>Q:</strong>  What <strong>language</strong> appears on the <i>Bayeux Tapestry</i>?</p>
-			</div>
-			<div class="col-lg-4">
-			    <img src = "geography.png" class="question"/><!--<h2>Geography</h2>-->
-                <p><img alt="Africa" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/Africa.png" title="Africa" /></p>
-                <p><strong>Q:</strong>  What is the <strong>capital</strong> of Burkina Faso?</p>
-			</div>
-			<div class="col-lg-4">
-				<img src = "artlit.png" class="question"/><!--<h2>Art</h2>-->
-                <p><img alt="Gustave Caillebotte" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/GustaveCaillebotte.jpg" title="Gustave Caillebotte" /></p>
-                <p><strong>Q:</strong> In what <strong>two professions</strong> was the artist who painted this iconic masterpiece engaged?</p>
-			</div>
-				<br />
-				<br />
-			<div class="col-lg-4">
-			    <img src = "reversehist.png" class="question"/><!--<h2>Jeopardy</h2>-->
-                <p><img alt="Africa" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/Jeopardy.png" title="Africa" /></p>
-                <p><strong>A:</strong>The following answers a question:</p>
-                <!-- Answers -->
-				<div id="monogoData" ng-controller="MyController">
-					<ul>
-						<li ng-repeat="president in presidents">
-							<p>{{president.getPresidentName()}}, {{president.getTermStart()}}-{{president.getTermEnd()}}<br/>
-						</li>
-					</ul>
-					<!-- <div ng-bind-html-unsafe="hint"></div> -->
-				</div>  <!-- mongoData -->
-				
-			<!--</div> -->
-
-			</div> <!-- starter-template ?? -->
-
+			    <br />
+			    <p><img alt="Scholar Droid" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/scholar-droid.png" title="Scholar Droid" /></p>
+			    <br />
+			    <br />
+			    <div class="row">
+			        <div class="col-lg-4">
+			            <img alt="history" src = "history.png" class="question"/><!--<h2>History</h2>-->
+                        <p><img alt="The Bayeux Tapestry" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/BayeuxTapestry.jpg" title="The Bayeux Tapestry" /></p>
+                        <!--<p><img src = "history.png"/>  What <strong>language</strong> is used to narrate the events of the Norman Conquest on the Bayeux Tapestry?</p> -->
+                        <p><strong>Q:</strong>  What <strong>language</strong> appears on the <i>Bayeux Tapestry</i>?</p>
+			        </div>
+			        <div class="col-lg-4">
+			            <img alt="geography" src = "geography.png" class="question"/><!--<h2>Geography</h2>-->
+                        <p><img alt="Africa" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/Africa.png" title="Africa" /></p>
+                        <p><strong>Q:</strong>  What is the <strong>capital</strong> of Burkina Faso?</p>
+			        </div>
+			        <div class="col-lg-4">
+				        <img alt="art and literature" src = "artlit.png" class="question"/><!--<h2>Art</h2>-->
+                        <p><img alt="Gustave Caillebotte" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/GustaveCaillebotte.jpg" title="Gustave Caillebotte" /></p>
+                        <p><strong>Q:</strong> In what <strong>two professions</strong> was the artist who painted this iconic masterpiece engaged?</p>
+			        </div>
+				    <br />
+				    <br />
+			        <div class="col-lg-4">
+			            <img alt="reverse history question" src = "reversehist.png" class="question"/><!--<h2>Jeopardy</h2>-->
+                        <p><img alt="Trivial Pursuit Board" src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/Jeopardy.png" title="Trivial Pursuit Board" /></p>
+                        <p><strong>A:</strong>The following answers a question:</p>
+                        <!-- Answers -->
+				        <div id="monogoData" ng-controller="MyController">
+					        <ul>
+						        <li ng-repeat="president in presidents">
+							        <p>{{president.getPresidentName()}}, {{president.getTermStart()}}-{{president.getTermEnd()}}<br/>
+						        </li>
+					        </ul>
+					    <!-- <div ng-bind-html-unsafe="hint"></div> -->
+				        </div>  <!-- #monogoData ng-controller -->
+			        </div> <!-- /.col-lg-4 -->
+			    </div> <!-- /.row -->
+			</div> <!-- /.starter-template -->
 		</div><!-- /.container -->
-
 	</body>
 </html>
