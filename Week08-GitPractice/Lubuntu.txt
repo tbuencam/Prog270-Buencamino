@@ -1,0 +1,8 @@
+total 16
+drwxr-xr-x  3 adminuser adminuser 4096 Nov 12 22:05 .
+drwxr-xr-x 11 adminuser adminuser 4096 Nov 12 21:51 ..
+-rw-r--r--  1 adminuser adminuser  556 Nov 12 22:03 CloudNine.txt
+drwxr-xr-x  2 adminuser adminuser 4096 Nov 12 22:03 images
+-rw-r--r--  1 adminuser adminuser    0 Nov 12 22:05 Lubuntu.txt
+-rw-r--r--  1 adminuser adminuser    0 Nov 12 21:51 Test01.md
+-rw-r--r--  1 adminuser adminuser    0 Nov 12 21:51 Test02.md
