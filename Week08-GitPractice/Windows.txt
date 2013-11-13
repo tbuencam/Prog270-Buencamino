@@ -1,0 +1,14 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 3AAB-6A97
+
+ Directory of C:\Users\Terence\Documents\GitHub\Prog270-BuencaminoT\Week08-GitPractice
+
+11/12/2013  06:06 PM                 0 Test02.md
+11/12/2013  06:06 PM                 0 Test01.md
+11/12/2013  07:02 PM               563 CloudNine.txt
+11/12/2013  07:02 PM    <DIR>          images
+11/12/2013  08:08 PM                 0 Windows.txt
+11/12/2013  08:08 PM    <DIR>          ..
+11/12/2013  08:08 PM    <DIR>          .
+               4 File(s)            563 bytes
+               3 Dir(s)  100,761,628,672 bytes free
