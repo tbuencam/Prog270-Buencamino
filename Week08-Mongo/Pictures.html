@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>Recommended</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="Carousel.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+		
+		<!-- Nav Bar 
+		================================================== -->
+		
+		<div class="navbar-wrapper">
+      	<div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand" href="index.html">Movies</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Recommended</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Recommended</a></li>
+                    <li><a href="About.html">About Me</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+		</div>
+		</div> <!-- Navbar wrapper -->
+
+
+		<!-- Carousel
+		================================================== -->
+		<div id="myCarousel" class="carousel slide">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/MoviesHeader1.jpg" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>See a Great Film Today!</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/MoviesHeader2.jpg" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Track Your Favorite Films</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/MoviesHeader3.jpg" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Movies Make Your Thoughts Go Round</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div><!-- /.carousel -->
+
+		<!-- Marketing messaging and featurettes
+		================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+		<div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row"><div><h1>Some Films with Stunning Cinematography</h1><br /></div></div>
+      
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="http://ia.media-imdb.com/images/M/MV5BMTcwODE2NTI3Nl5BMl5BanBnXkFtZTcwMjUwOTY5Mg@@._V1_SX214_.jpg" alt="Fantastic Mr. Fox">
+          <h2>Fantastic Mr. Fox</h2>
+          <p>An urbane fox cannot resist returning to his farm raiding ways and then must help his community survive the farmers' retaliation.</p>
+          <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="http://ia.media-imdb.com/images/M/MV5BMjE3MDM4NTg0NV5BMl5BanBnXkFtZTcwNjI4MTczMw@@._V1_SX214_.jpg" alt="Lemony Snicket">
+          <h2>Lemony Snicket</h2>
+          <p>When a massive fire kills their parents, three children are delivered to the custody of cousin and stage actor Count Olaf, who is secretly plotting to steal their parents' vast fortune.</p>
+          <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="http://ia.media-imdb.com/images/M/MV5BMTUwNzkwMTk5Nl5BMl5BanBnXkFtZTYwMDAzMDI5._V1_SY317_CR3,0,214,317_.jpg" alt="Amelie">
+          <h2>Amelie</h2>
+          <p>Amelie, an innocent and naive girl in Paris, with her own sense of justice, decides to help those around her and along the way, discovers love.</p>
+          <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="http://ecx.images-amazon.com/images/I/51E1qQHnOqL._SX215_.jpg" alt="Avatar">
+          <h2>Avatar</h2>
+          <p>A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</p>
+          <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/TheFall.jpg" alt="The Fall">
+          <h2>The Fall</h2>
+          <p>In a hospital on the outskirts of 1920s Los Angeles, an injured stuntman begins to tell a fellow patient, a little girl with a broken arm, a fantastic story of five mythical heroes.</p>
+          <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="http://ia.media-imdb.com/images/M/MV5BMzg5MDczNzQxNV5BMl5BanBnXkFtZTcwMjQ0MjM3MQ@@._V1_SY317_CR17,0,214,317_.jpg" alt="The Red Violin">
+          <h2>The Red Violin</h2>
+          <p>A perfect red-colored violin inspires passion, making its way through three centuries over several owners and countries, eventually ending up at an auction where it may find a new owner.</p>
+          <!--<p><a class="btn btn-default" href="#">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->     
+	</div><!-- /.container marketing -->
+
+		
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>&copy; 2013 Company, Inc. &middot;</p>
+			</footer>
+
+		</div><!-- /.container -->
+
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>About Me</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="Carousel.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+		
+		<!-- Nav Bar 
+		================================================== -->
+		
+		<div class="navbar-wrapper">
+      	<div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand" href="index.html">Movies</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pictures.html">Recommended</a></li>
+                <li class="active"><a href="#">About Me</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Pictures.html">Recommended</a></li>
+                    <li class="active"><a href="#">About Me</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+		</div>
+		</div> <!-- Navbar wrapper -->
+
+
+		<!-- Carousel
+		================================================== -->
+		<div id="myCarousel" class="carousel slide">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/MoviesHeader1.jpg" alt="First slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Movies Make Your Thoughts Go Round</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/MoviesHeader2.jpg" alt="Second slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Track Your Favorite Films</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="https://googledrive.com/host/0B4aq2PkgYPdEX3N0ZHdEYzdZNGc/MoviesHeader3.jpg" alt="Third slide">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>See a Great Film Today!</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div><!-- /.carousel -->
+
+		<!-- Marketing messaging and featurettes
+		================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
+
+		<div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row"><div><h1>About Me</h1><br /></div></div>
+      <div class="row"><div><p>I am an avid film buff who enjoys well-made films of many genres, from comedies, to documentaries, to adventure films.</p>
+      <p>I have a great appreciation and admiration for fine actors. They transport us to and through every aspect and nuance of human experience. In a future life, I'd like to come back as  ...</p>
+      <br /></div></div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://ia.media-imdb.com/images/M/MV5BMTY1NTU5NzU0OF5BMl5BanBnXkFtZTcwMzEzMTIwNw@@._V1_SY317_CR23,0,214,317_.jpg" alt="John Hamm">
+          <h2>John Hamm</h2>
+          <p>... the ruggedly handsome John Hamm ...</p>
+          <p><a class="btn btn-default" href="http://www.imdb.com/name/nm0358316/?ref_=nmmi_mi_nm">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://ia.media-imdb.com/images/M/MV5BMTMwOTg5NTQ3NV5BMl5BanBnXkFtZTcwNzM3MDAzNQ@@._V1_SY317_CR6,0,214,317_.jpg" alt="Jude Law">
+          <h2>Jude Law</h2>
+          <p>.... or the comely fine-featured Jude Law ...</p>
+          <p><a class="btn btn-default" href="http://www.imdb.com/name/nm0000179/?ref_=fn_al_nm_1">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://ia.media-imdb.com/images/M/MV5BMTc4NTIwNTI4N15BMl5BanBnXkFtZTYwODM0MjMz._V1_SY317_CR9,0,214,317_.jpg" alt="Cate Blanchette">
+          <h2>Cate Blanchette</h2>
+          <p>... and be married to the brillant and lovely Cate Blanchette.</p>
+          <p><a class="btn btn-default" href="http://www.imdb.com/name/nm0000949/?ref_=nv_sr_1">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div>
+
+		
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>&copy; 2013 Company, Inc. &middot;</p>
+			</footer>
+
+		</div><!-- /.container -->
+
+	</body>
+</html>
